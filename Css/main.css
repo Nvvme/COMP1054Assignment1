@@ -1,0 +1,157 @@
+/* Global Style*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* I tried to use different types of fonts*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f4f4f4;
+  background: #7b3f00; /* Muted brown background for the retro aesthetic */
+  background-image: url('../images/recordplayer.jpg'); /*Image taken from unsplash.com*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+a {
+  color: #fdd017; /* Gold color for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  color: #fdd017; /* Gold color for headers */
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 5rem;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-shadow: 3px 3px 0px #8b4513; /* Darker shadow for depth */
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace; /* Retro font choice for subheadings */
+}
+
+p, blockquote, cite {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #f4f4f4;
+}
+
+
+blockquote::before {
+  content: open-quote;
+  font-size: 6rem;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  color: #fdd017;
+}
+
+/* Main Content Styles */
+main {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  max-width: 1000px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  margin-top: 10px;
+  color: #f4f4f4;
+}
+/* Footer Styles */
+
+footer {
+  background-color: transparent;
+  padding: 20px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+  font-size: 1.125rem;
+}
+
+footer a {
+  font-size: larger;
+  color: black ;
+  text-decoration: underline;
+}
+/* Media Queries */
+
+@media only screen and (min-width: 480px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+
+/* the nav bar*/
+/* Navigation Bar Styles */
+.navbar {
+  width: 100%;
+  background-color: #8b4513; /* Darker shade for the navbar to match the shadow */
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centers the navigation links */
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 10px; /* Spacing between navigation items */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fdd017; /* Gold color to match the global link style */
+  font-weight: bold;
+  font-family: "Roboto", sans-serif; /* Keeping font consistency */
+  transition: color 0.3s ease, background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.nav-links a:hover, .nav-links a:focus {
+  color: #7b3f00; 
+  background-color: #fdd017;
+  padding: 5px 10px;
+  border-radius: 5px; 
+}
+
+.music-platforms img {
+  width: 24px;
+  bottom: 0;
+  position: sticky;
+}
