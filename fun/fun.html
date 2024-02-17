@@ -1,0 +1,79 @@
+<!--I know this is not a part of the assignment but I just wanted to have some fun
+I don't claim anything that I have used here and I have provided proper attributions and sources for everything.
+the bomb is taken from https://codepen.io/leimapapa/pen/ZRBGYw
+and the music player is taken from https://stackoverflow.com/questions/63733319/javascript-mp3-player-play-pause-toggle-functionality-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fun Surprise :)</title>
+<script src="script.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+<link rel="stylesheet" href="../Css/main3.css"/>
+<!-- the above css is for the buttons -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" type="x-icon" href="../images/music.png">
+<!-- the above icon is taken from https://www.flaticon.com/-->
+</head>
+<header>
+  <nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="fun.html">Fun :)</a></li>
+        <li class="music-platforms">
+            <a href="https://open.spotify.com/track/5BQLFGCDxrMklI70r1JjJ9">Spotify<img src="../images/spotify-svgrepo-com.svg" alt="Spotify"></a>
+            <a href="https://music.apple.com/us/song/i-dont-want-to-set-the-world-on-fire-single-version/1423332120">Apple Music<img src="../images/apple-svgrepo-com.svg" alt="Apple Music"></a>
+<!--the svgs were taken from svgrepo.com-->
+        </li>
+    </ul>
+</nav>    
+</header>
+<body style="background-color:rgb(56, 71, 79)"> 
+  <!-- Background style from the second HTML -->
+<!-- Content from the first HTML -->
+<!-- I combined two htmls to create this page-->
+<div style="display: flex; justify-content: center; align-items: center; top: 0;">
+  <!--the above div is to center the mp3 buttons on the page-->
+<div class="screen">
+  <div class="song-info-text">
+    <p class="song-artist">Click the Play Button</p>
+  </div>
+  <div class="mp3-buttons">
+    <button class="button" type="button" name="button"><i class="fas fa-step-backward"></i></button>
+    <button id="play-button" onclick="currentSong()" type="button" name="button"><i id="stateicon" class="fas fa-play"></i></button>
+    <button class="button" type="button" name="button"><i class="fas fa-step-forward"></i></button>
+  </div>
+    <p class="song-name">Then sit back and relax for a minute or two and listen. I think there are two bombs but Idk..</p>
+  </div>
+</div>
+<script src="index.js" charset="utf-8"></script>
+<!-- Content from the second HTML -->
+<div id="nukeBG">
+  <div id="fadeIt"></div>
+  <div id="nuke"></div>
+  <div id="terrain">
+    <div id="LBground" class="ground"></div>
+    <div id="LSground" class="ground"></div>
+    <div id="RBground" class="ground"></div>
+    <div id="RSground" class="ground"></div>
+    <div id="lCloud" class="ground"></div>
+    <div id="rCloud" class="ground"></div>
+  </div>
+  <div id="explosion">
+    <div id="exCloud"></div>
+    <div id="exFunnel"></div>
+    <div id="exFunnel2"></div>
+    <div id="exPlume"></div>
+    <div id="exPlume2"></div>
+    <div id="exPlume3"></div>
+    <div id="exPlume4"></div>
+    <div id="exRing2"></div>
+    <div id="exRing"></div>
+    <div id="exBase"></div>
+    <div id="exFlash"></div>
+  </div>
+</div>
+</body>
+</html>
